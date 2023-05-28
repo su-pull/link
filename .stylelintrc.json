@@ -9,5 +9,8 @@
       "files": ["**/*.vue"],
       "customSyntax": "postcss-html"
     }
-  ]
+  ],
+  "rules": {
+    "no-descending-specificity": null
+  }
 }
