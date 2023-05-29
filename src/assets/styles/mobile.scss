@@ -11,4 +11,8 @@
   .header__main {
     display: none;
   }
+  pre {
+    max-width: 100%;
+    overflow: auto;
+  }
 }
