@@ -1,5 +1,3 @@
 <template>
-  <Animate>
-    <h1>Home Page</h1>
-  </Animate>
+  <h1>Home Page</h1>
 </template>
