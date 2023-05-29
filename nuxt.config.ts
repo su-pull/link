@@ -4,5 +4,13 @@ export default defineNuxtConfig({
   },
   srcDir: 'src/',
   css: ['~/assets/styles/main.scss', '~/assets/styles/mobile.scss'],
-  modules: ['@vueuse/motion/nuxt']
+  modules: ['@nuxt/content', '@vueuse/motion/nuxt'],
+  app: {
+    pageTransition: { name: 'page', mode: 'out-in' }
+  },
+  content: {
+    highlight: {
+      theme: 'github-dark-dimmed'
+    }
+  }
 })
