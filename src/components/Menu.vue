@@ -3,18 +3,22 @@
   articles.value = [
     {
       href: '/',
-      title: 'Home'
+      title: '🏡Home'
     },
     {
       href: '/about',
-      title: 'About'
+      title: '😆 About'
+    },
+    {
+      href: '/blog',
+      title: '😁 Blog'
     },
     {
       href: '/resume',
-      title: 'Resume'
+      title: '😊 Resume'
     }
   ]
-  // const showMenu = useState('open', () => false)
+
   const showMenu = ref(false)
   function toggleMenu() {
     showMenu.value = !showMenu.value
@@ -25,7 +29,6 @@
   <div>
     <div class="Line">
       <button
-        class="button_open"
         aria-label="Toggle mobile navigation menu"
         type="button"
         :aria-expanded="showMenu"
@@ -40,11 +43,7 @@
       <nav :aria-expanded="showMenu">
         <ul class="menu_list">
           <li v-for="article in articles" :key="article.href">
-            <NuxtLink
-              :to="{ path: article.href }"
-              class="link_container"
-              @click="showMenu = false"
-            >
+            <NuxtLink :to="{ path: article.href }" @click="showMenu = false">
               {{ article.title }}
             </NuxtLink>
           </li>
@@ -60,6 +59,7 @@
       position: relative;
       z-index: 4;
       padding: 30px 12px 6px;
+      background: rgb(253, 233, 233);
       border: none;
       border-radius: 12%;
       outline: none;
@@ -68,14 +68,14 @@
 
     .Line {
       position: fixed;
-      top: 12px;
+      top: 16px;
       right: 16px;
       z-index: 4;
       display: inline-block;
       cursor: pointer;
     }
     .Line [aria-expanded='true'] {
-      transform: rotate(-90deg);
+      transform: scale(1.2);
     }
 
     .Line span {
@@ -139,39 +139,43 @@
       .menu_list {
         opacity: 0;
       }
+      .menu_list li {
+        opacity: 0;
+        transform: translateY(-96px);
+      }
     }
-
     .menu_list {
       position: fixed;
       top: 0;
       z-index: 3;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
       width: 100%;
       height: 100%;
-      margin: auto;
-      background: rgba(255, 135, 153, 0.3);
-      border: solid 2px var(--color-text);
-      border-radius: 6px;
-      transition-duration: 0.2s;
-      backdrop-filter: blur(5px);
-    }
-
-    .menu_list a {
-      display: block;
-      height: 58px;
-      padding: 14px 28px;
-      font-size: 16px;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      background: rgba(220, 204, 204, 0.2);
+      transition: 0.2s;
+      backdrop-filter: blur(1px);
     }
 
     .menu_list li {
       position: relative;
-      top: 55%;
-      left: 10%;
-      width: 80%;
-      margin: 8px 0;
-      text-align: left;
+      top: 96px;
+      width: 64%;
       list-style: none;
-      background: rgb(255, 200, 200);
+      background: #fff;
       border-radius: 8px;
+      transition: 0.2s;
+    }
+
+    .menu_list a {
+      display: block;
+      padding: 12px 28px;
+      text-align: left;
     }
   }
 </style>
