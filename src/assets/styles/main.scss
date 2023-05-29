@@ -10,6 +10,13 @@
   --color-shadow: rgb(0 0 0 / 50%);
 }
 
+html {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
 body {
   position: relative;
   z-index: 0;
@@ -34,7 +41,7 @@ a:hover {
 }
 
 h1 {
-  padding: 20px;
+  padding: 8px 0;
 }
 
 .show_menu {
@@ -43,4 +50,14 @@ h1 {
 
 .Line {
   display: none;
+}
+
+pre {
+  padding: 20px;
+  background: rgb(32, 33, 34);
+  border-radius: 8px;
+}
+
+code {
+  font-family: ui-monospace;
 }
