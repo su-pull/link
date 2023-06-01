@@ -28,8 +28,8 @@
 </script>
 
 <template>
-  <Menu />
   <header class="header__main">
+    <Menu />
     <nav class="header__nav">
       <ul class="header__ul">
         <li v-for="header in headers" :key="header.href">
