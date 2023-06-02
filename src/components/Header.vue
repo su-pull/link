@@ -6,8 +6,8 @@
       title: 'Home'
     },
     {
-      href: '/about',
-      title: 'About'
+      href: '/link',
+      title: 'Link'
     },
     {
       href: '/blog',
@@ -36,7 +36,7 @@
           <NuxtLink
             :to="{ path: header.href }"
             class="link_container"
-            :class="{ fade: isCurrentActive(header.href, pathname.path) }"
+            :class="{ active: isCurrentActive(header.href, pathname.path) }"
           >
             {{ header.title }}
           </NuxtLink>
@@ -47,9 +47,8 @@
 </template>
 
 <style scoped lang="scss">
-  .fade {
+  .active {
     color: rgb(213, 177, 177);
-    pointer-events: none;
     background: rgb(253, 233, 233);
   }
 
@@ -79,7 +78,6 @@
     justify-content: center;
     height: 24px;
     padding: 12px;
-
     white-space: nowrap;
     border-radius: 16px;
     transition-duration: 0.4s;
