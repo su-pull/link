@@ -1,5 +1,5 @@
 :root {
-  --color-text: rgb(55 65 81);
+  --color-text: rgb(73, 81, 94);
   --color-second-color: rgb(150 150 150);
   --color-light: rgb(90, 90, 90);
   --color-bg: #fffffe;
@@ -23,10 +23,13 @@ body {
   width: 600px;
   min-height: 100vh;
   margin: auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue';
   font-size: 14px;
   color: var(--color-text);
   text-align: center;
-  word-break: keep-all;
+  word-break: break-all;
   background-color: var(--color-bg);
   transition-duration: 0.8s;
 }
@@ -40,8 +43,16 @@ a:hover {
   color: #333;
 }
 
-h1 {
-  padding: 8px 0;
+ul {
+  list-style-type: '# ';
+}
+
+p {
+  line-height: 1.68;
+}
+
+h2 {
+  font-size: 14px;
 }
 
 .show_menu {
