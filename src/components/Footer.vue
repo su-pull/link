@@ -1,7 +1,7 @@
 <template>
   <footer class="footer_main">
     <span class="footer_text">{{ year }} © S.watanabe. license MIT</span>
-    <a href="https://link.su-pull.net/rss.xml">RSS</a>
+    <a class="rss" href="https://link.su-pull.net/rss.xml">RSS</a>
   </footer>
 </template>
 
@@ -32,6 +32,10 @@
     .footer_main {
       left: 10px;
       height: 40px;
+    }
+    .rss {
+      position: absolute;
+      right: 10px;
     }
   }
 </style>
