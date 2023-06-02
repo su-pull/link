@@ -40,8 +40,5 @@
     "*.{js,ts,vue}": "eslint --cache --fix",
     "*.{css,scss,vue}": "stylelint --cache --fix",
     "*.{js,ts,vue,css,scss,md,json,yml}": "prettier --write"
-  },
-  "dependencies": {
-    "@vueuse/motion": "^2.0.0"
   }
 }

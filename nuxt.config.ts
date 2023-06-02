@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   },
   srcDir: 'src/',
   css: ['~/assets/styles/main.scss', '~/assets/styles/mobile.scss'],
-  modules: ['@nuxt/content', '@vueuse/motion/nuxt'],
+  modules: ['@nuxt/content'],
   app: {
     pageTransition: { name: 'page', mode: 'out-in' }
   },
