@@ -6,8 +6,8 @@
       title: '🏡Home'
     },
     {
-      href: '/about',
-      title: '😆 About'
+      href: '/link',
+      title: '😆 Link'
     },
     {
       href: '/blog',
