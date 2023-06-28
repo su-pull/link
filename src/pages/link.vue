@@ -13,6 +13,9 @@
         <a href="https://works.su-pull.net/">works.su-pull.net</a>
       </li>
       <li>
+        <a href="https://ja.su-pull.net/">ja.su-pull.net</a>
+      </li>
+      <li>
         <a>link.su-pull.net (this)</a>
       </li>
       <li>
@@ -23,6 +26,11 @@
       <li>
         <a href="https://www.npmjs.com/package/react-page-fitter">
           react-page-fitter (npm)
+        </a>
+      </li>
+      <li>
+        <a href="https://www.npmjs.com/package/react-magic-card">
+          react-magic-card (npm)
         </a>
       </li>
       <li>
